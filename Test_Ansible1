@@ -1,0 +1,13 @@
+Hi This is my Ansible play book on my own.
+
+
+---
+ -hosts:Webservers
+   become:true
+   tasks:
+     - name: copy war from src to dest
+       copy:
+          src=path
+          dest=path
+          
+To Execute this playbook: ansible-playbook copy.yml
