@@ -1,0 +1,35 @@
+ SOft link and hard link
+ SOftlink
+can cross the file system,
+allows you to link between directories,
+has different inodes number and file permissions than original file,
+permissions will not be updated,
+has only the path of the original file, not the contents.
+A hard Link
+
+can’t cross the file system boundaries,
+can’t link directories,
+has the same inodes number and permissions of original file,
+permissions will be updated if we change the permissions of source file,
+has the actual contents of original file, so that you still can view the contents, even if the original file moved or removed.
+
+------------------------------------
+
+Trouble shooting Linux System
+
+1.lsof: “list open files” to help you to find all the opened files and processes along with the one who opened them
+lsof –p PID : all the files opened by particular PID
+lsof -p 4271 | wc -l : Count number of files & processes
+
+if morefiles are being used will check the hard and soft limit of application. ulimit -Hn/ulimit -Sn and change in
+cat /etc/security/limits.conf
+
+2.
+TOP : top –u username
+3.
+SAR(System Activity Report) :dump data for load and check based on when performance glitch was reported.
+
+4.
+Check the recent system logs (/var/log/messages) to notice if any failed/error/warning messages.
+
+-----------------------------------------------------------------------------------------------------
