@@ -32,4 +32,11 @@ SAR(System Activity Report) :dump data for load and check based on when performa
 4.
 Check the recent system logs (/var/log/messages) to notice if any failed/error/warning messages.
 
+SED command in UNIX is stands for stream editor and it can perform lot's of function on file like, searching, find and replace,
+insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace
+
+sed 's/e1/e2/g' test - in test file e1 is replaced with e2 as temperory
+-i the changed permanently
+
 -----------------------------------------------------------------------------------------------------
+AWK Command-Awk is a scripting language used for manipulating data and generating reports.
